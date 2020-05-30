@@ -3,9 +3,9 @@ import {body} from 'express-validator';
 import jwt from 'jsonwebtoken';
 
 import {User} from '../models/user';
-import {DatabaseConnectionError} from '../errors/database-connection-error';
-import {BadRequestError} from '../errors/bad-request-error';
-import {validateRequest} from '../middlewares/validate-request';
+import {DatabaseConnectionError} from '@doogan-tickets/common';
+import {BadRequestError} from '@doogan-tickets/common';
+import {validateRequest} from '@doogan-tickets/common';
 
 const router = express.Router();
 
